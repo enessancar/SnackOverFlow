@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC54AE2C2A40C3EE0004AD4C /* SnackOverFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC54AE2B2A40C3EE0004AD4C /* SnackOverFlowApp.swift */; };
+		EC54AE2E2A40C3EE0004AD4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC54AE2D2A40C3EE0004AD4C /* ContentView.swift */; };
+		EC54AE302A40C3EE0004AD4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC54AE2F2A40C3EE0004AD4C /* Assets.xcassets */; };
+		EC54AE332A40C3EE0004AD4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC54AE322A40C3EE0004AD4C /* Preview Assets.xcassets */; };
+		EC54AE402A40C5970004AD4C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC54AE3F2A40C5970004AD4C /* WelcomeView.swift */; };
+		EC54AE422A40CFFE0004AD4C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC54AE412A40CFFE0004AD4C /* Colors.xcassets */; };
+		EC54AE442A40D0430004AD4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC54AE432A40D0430004AD4C /* Images.xcassets */; };
+		ECC51D032A40F48C00E4871D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D022A40F48C00E4871D /* Images.swift */; };
+		ECC51D062A41053300E4871D /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D052A41053300E4871D /* Color+Ext.swift */; };
+		ECC51D082A41079A00E4871D /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D072A41079A00E4871D /* Icons.swift */; };
+		ECC51D0C2A41AE2800E4871D /* FacebookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D0B2A41AE2800E4871D /* FacebookButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC54AE282A40C3EE0004AD4C /* SnackOverFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnackOverFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC54AE2B2A40C3EE0004AD4C /* SnackOverFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackOverFlowApp.swift; sourceTree = "<group>"; };
+		EC54AE2D2A40C3EE0004AD4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EC54AE2F2A40C3EE0004AD4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC54AE322A40C3EE0004AD4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC54AE3F2A40C5970004AD4C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		EC54AE412A40CFFE0004AD4C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		EC54AE432A40D0430004AD4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECC51D022A40F48C00E4871D /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		ECC51D052A41053300E4871D /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		ECC51D072A41079A00E4871D /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		ECC51D0B2A41AE2800E4871D /* FacebookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC54AE252A40C3EE0004AD4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC54AE1F2A40C3EE0004AD4C = {
+			isa = PBXGroup;
+			children = (
+				EC54AE2A2A40C3EE0004AD4C /* SnackOverFlow */,
+				EC54AE292A40C3EE0004AD4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC54AE292A40C3EE0004AD4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC54AE282A40C3EE0004AD4C /* SnackOverFlow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC54AE2A2A40C3EE0004AD4C /* SnackOverFlow */ = {
+			isa = PBXGroup;
+			children = (
+				EC54AE3C2A40C4A10004AD4C /* Product */,
+				EC54AE3B2A40C4850004AD4C /* Feature */,
+				EC54AE3A2A40C47D0004AD4C /* Resources */,
+				EC54AE392A40C4780004AD4C /* Utils */,
+				EC54AE2B2A40C3EE0004AD4C /* SnackOverFlowApp.swift */,
+				EC54AE2D2A40C3EE0004AD4C /* ContentView.swift */,
+				EC54AE312A40C3EE0004AD4C /* Preview Content */,
+			);
+			path = SnackOverFlow;
+			sourceTree = "<group>";
+		};
+		EC54AE312A40C3EE0004AD4C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EC54AE322A40C3EE0004AD4C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC54AE392A40C4780004AD4C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ECC51D042A41051000E4871D /* Extensions */,
+				ECC51D012A40F38300E4871D /* Enums */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EC54AE3A2A40C47D0004AD4C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC54AE452A40D0470004AD4C /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC54AE3B2A40C4850004AD4C /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				EC54AE3D2A40C4B70004AD4C /* Authentication */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		EC54AE3C2A40C4A10004AD4C /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				ECC51D092A41AE0100E4871D /* Widget */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		EC54AE3D2A40C4B70004AD4C /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				EC54AE3E2A40C4F70004AD4C /* Welcome */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		EC54AE3E2A40C4F70004AD4C /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				EC54AE3F2A40C5970004AD4C /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		EC54AE452A40D0470004AD4C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EC54AE2F2A40C3EE0004AD4C /* Assets.xcassets */,
+				EC54AE412A40CFFE0004AD4C /* Colors.xcassets */,
+				EC54AE432A40D0430004AD4C /* Images.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		ECC51D012A40F38300E4871D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				ECC51D022A40F48C00E4871D /* Images.swift */,
+				ECC51D072A41079A00E4871D /* Icons.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		ECC51D042A41051000E4871D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ECC51D052A41053300E4871D /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ECC51D092A41AE0100E4871D /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				ECC51D0A2A41AE1700E4871D /* Button */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		ECC51D0A2A41AE1700E4871D /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				ECC51D0B2A41AE2800E4871D /* FacebookButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC54AE272A40C3EE0004AD4C /* SnackOverFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC54AE362A40C3EE0004AD4C /* Build configuration list for PBXNativeTarget "SnackOverFlow" */;
+			buildPhases = (
+				EC54AE242A40C3EE0004AD4C /* Sources */,
+				EC54AE252A40C3EE0004AD4C /* Frameworks */,
+				EC54AE262A40C3EE0004AD4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnackOverFlow;
+			productName = SnackOverFlow;
+			productReference = EC54AE282A40C3EE0004AD4C /* SnackOverFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC54AE202A40C3EE0004AD4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					EC54AE272A40C3EE0004AD4C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = EC54AE232A40C3EE0004AD4C /* Build configuration list for PBXProject "SnackOverFlow" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC54AE1F2A40C3EE0004AD4C;
+			productRefGroup = EC54AE292A40C3EE0004AD4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC54AE272A40C3EE0004AD4C /* SnackOverFlow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC54AE262A40C3EE0004AD4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC54AE422A40CFFE0004AD4C /* Colors.xcassets in Resources */,
+				EC54AE442A40D0430004AD4C /* Images.xcassets in Resources */,
+				EC54AE332A40C3EE0004AD4C /* Preview Assets.xcassets in Resources */,
+				EC54AE302A40C3EE0004AD4C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC54AE242A40C3EE0004AD4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC54AE2E2A40C3EE0004AD4C /* ContentView.swift in Sources */,
+				EC54AE402A40C5970004AD4C /* WelcomeView.swift in Sources */,
+				ECC51D082A41079A00E4871D /* Icons.swift in Sources */,
+				ECC51D0C2A41AE2800E4871D /* FacebookButton.swift in Sources */,
+				ECC51D032A40F48C00E4871D /* Images.swift in Sources */,
+				EC54AE2C2A40C3EE0004AD4C /* SnackOverFlowApp.swift in Sources */,
+				ECC51D062A41053300E4871D /* Color+Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EC54AE342A40C3EE0004AD4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC54AE352A40C3EE0004AD4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC54AE372A40C3EE0004AD4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SnackOverFlow/Preview Content\"";
+				DEVELOPMENT_TEAM = 3KRQW7JR73;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = enes.SnackOverFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC54AE382A40C3EE0004AD4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SnackOverFlow/Preview Content\"";
+				DEVELOPMENT_TEAM = 3KRQW7JR73;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = enes.SnackOverFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC54AE232A40C3EE0004AD4C /* Build configuration list for PBXProject "SnackOverFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC54AE342A40C3EE0004AD4C /* Debug */,
+				EC54AE352A40C3EE0004AD4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC54AE362A40C3EE0004AD4C /* Build configuration list for PBXNativeTarget "SnackOverFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC54AE372A40C3EE0004AD4C /* Debug */,
+				EC54AE382A40C3EE0004AD4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC54AE202A40C3EE0004AD4C /* Project object */;
+}
