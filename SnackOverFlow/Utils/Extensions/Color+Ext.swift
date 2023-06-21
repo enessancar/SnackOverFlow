@@ -10,5 +10,5 @@ import SwiftUI
 extension Color {
     
     static public var deepSkyBlue: Color { Color("deepSkyBlue") }
-    static public var peach: Color { Color("peach") }
+    static public var peach: Color { Color("peace") }
 }

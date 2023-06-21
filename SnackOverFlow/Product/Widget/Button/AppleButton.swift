@@ -1,5 +1,5 @@
 //
-//  FacebookButton.swift
+//  AppleButton.swift
 //  SnackOverFlow
 //
 //  Created by Enes Sancar on 20.06.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FacebookButton: View {
+struct AppleButton: View {
     var onTap: () -> Void
     
     var body: some View {
@@ -16,22 +16,23 @@ struct FacebookButton: View {
         }
     label: {
         HStack {
-            Image(Icons.facebook.rawValue)
-            Text(LocaleKeys.Auth.facebook.rawValue.locale())
+            Image(Icons.apple.rawValue)
+            Text(LocaleKeys.Auth.apple.rawValue.locale())
             Spacer()
         }
         .tint(.white)
-        .background(Color.deepSkyBlue)
-        
+        .font(.title2)
+        .padding(.all, 16)
     }
-    .buttonStyle(.borderedProminent)
     .buttonBorderShape(.roundedRectangle)
     .controlSize(.large)
+    .background(.black)
+    .cornerRadius(8)
     }
 }
 
-struct FacebookButton_Previews: PreviewProvider {
+struct AppleButton_Previews: PreviewProvider {
     static var previews: some View {
-        FacebookButton(onTap: {})
+        AppleButton(onTap: {})
     }
 }
