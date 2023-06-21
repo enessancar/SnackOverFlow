@@ -25,6 +25,8 @@
 		ECC51D192A41FBBA00E4871D /* EmailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D182A41FBBA00E4871D /* EmailButton.swift */; };
 		ECC51D1C2A424B7B00E4871D /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D1B2A424B7B00E4871D /* OnboardView.swift */; };
 		ECC51D1E2A42CF9500E4871D /* NormalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D1D2A42CF9500E4871D /* NormalButton.swift */; };
+		ECC51D202A42DFA500E4871D /* OnboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D1F2A42DFA500E4871D /* OnboardModel.swift */; };
+		ECC51D232A42F17100E4871D /* ViewHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D222A42F17100E4871D /* ViewHeight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		ECC51D182A41FBBA00E4871D /* EmailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailButton.swift; sourceTree = "<group>"; };
 		ECC51D1B2A424B7B00E4871D /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 		ECC51D1D2A42CF9500E4871D /* NormalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalButton.swift; sourceTree = "<group>"; };
+		ECC51D1F2A42DFA500E4871D /* OnboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardModel.swift; sourceTree = "<group>"; };
+		ECC51D222A42F17100E4871D /* ViewHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHeight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,7 @@
 		ECC51D012A40F38300E4871D /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				ECC51D212A42F16500E4871D /* Size */,
 				ECC51D022A40F48C00E4871D /* Images.swift */,
 				ECC51D072A41079A00E4871D /* Icons.swift */,
 			);
@@ -209,8 +214,17 @@
 			isa = PBXGroup;
 			children = (
 				ECC51D1B2A424B7B00E4871D /* OnboardView.swift */,
+				ECC51D1F2A42DFA500E4871D /* OnboardModel.swift */,
 			);
 			path = Onboard;
+			sourceTree = "<group>";
+		};
+		ECC51D212A42F16500E4871D /* Size */ = {
+			isa = PBXGroup;
+			children = (
+				ECC51D222A42F17100E4871D /* ViewHeight.swift */,
+			);
+			path = Size;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,8 +307,10 @@
 				ECC51D1C2A424B7B00E4871D /* OnboardView.swift in Sources */,
 				ECC51D172A41E4DA00E4871D /* AppleButton.swift in Sources */,
 				ECC51D152A41D56D00E4871D /* GoogleButton.swift in Sources */,
+				ECC51D202A42DFA500E4871D /* OnboardModel.swift in Sources */,
 				ECC51D032A40F48C00E4871D /* Images.swift in Sources */,
 				EC54AE2C2A40C3EE0004AD4C /* SnackOverFlowApp.swift in Sources */,
+				ECC51D232A42F17100E4871D /* ViewHeight.swift in Sources */,
 				ECC51D192A41FBBA00E4871D /* EmailButton.swift in Sources */,
 				ECC51D062A41053300E4871D /* Color+Ext.swift in Sources */,
 				ECC51D1E2A42CF9500E4871D /* NormalButton.swift in Sources */,

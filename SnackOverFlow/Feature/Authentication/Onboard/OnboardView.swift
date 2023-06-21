@@ -8,34 +8,53 @@
 import SwiftUI
 
 struct OnboardView: View {
+    
+    @State private var currentIndex: Int = 0
+    
     var body: some View {
         VStack {
             Spacer()
-            
-            TabView {
-                VStack {
-                    Image("img_hand_pick")
-                    Text("Hand-pickle high quality snacks.")
+            TabView(
+                selection: $currentIndex,
+                content: {
+                    ForEach((0..<OnboardModel.items.count), id: \.self) { value in
+                        SliderCard(model: OnboardModel.items[value])
                 }
-                VStack {
-                    Image("img_shop").resizable()
-                    Text("Shop global. Mind-blownly affordable.")
-                }
-                VStack {
-                    Image("img_deliver")
-                    Text("Deliver on the promise of time.")
-                }
-            }.tabViewStyle(.page)
+            })
+            .tabViewStyle(.page(indexDisplayMode: .never))
             Spacer()
             HStack {
-                IndicatorRectangle(width: 40)
-                IndicatorRectangle(width: 20)
-                IndicatorRectangle(width: 20)
-            }.frame(height: 20)
+                ForEach((0...2), id: \.self) { index in
+                    if index == currentIndex {
+                        IndicatorRectangle(width: 44)
+                            .foregroundColor(.coolney)
+                    } else {
+                        IndicatorRectangle(width: 16)
+                            .foregroundColor(.karl)
+                    }
+                }
+            }.frame(height: ViewHeight.indicator)
             NormalButton(onTap: {
                 
-            }, title: "Get Started")
+            }, title: LocaleKeys.Buttons.getStarted.rawValue)
             .padding(.all, 16)
+        }
+        
+    }
+}
+
+private struct SliderCard : View {
+    var model: OnboardModel
+    var body: some View {
+        VStack {
+            Image(model.image)
+                .resizable()
+                .frame(width: 390, height: 390)
+            Text(model.description)
+                .font(.system(size: 28, weight: .semibold))
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.peach)
+                
         }
     }
 }
@@ -43,7 +62,8 @@ struct OnboardView: View {
 private struct IndicatorRectangle: View {
     var width: Double
     var body: some View {
-        Rectangle().frame(width: width).cornerRadius(20)
+        Rectangle()
+            .frame(width: width).cornerRadius(20)
     }
 }
 

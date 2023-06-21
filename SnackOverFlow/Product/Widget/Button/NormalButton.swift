@@ -18,7 +18,7 @@ struct NormalButton: View {
     label: {
         HStack {
             Spacer()
-            Text(title)
+            Text(title.locale())
             Spacer()
         }
         .tint(.white)
