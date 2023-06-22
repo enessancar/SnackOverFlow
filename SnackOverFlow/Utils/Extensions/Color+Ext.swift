@@ -13,4 +13,5 @@ extension Color {
     static public var peach: Color { Color("peace") }
     static public var coolney: Color { Color("coolney") }
     static public var karl: Color { Color("karl") }
+    static public var teflon: Color { Color("teflon") }
 }

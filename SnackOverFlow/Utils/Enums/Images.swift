@@ -10,3 +10,10 @@ import Foundation
 enum Images: String {
     case juice = "img_juice"
 }
+
+struct ImageItems {
+    
+    enum Authentication: String {
+        case login = "volcano"
+    }
+}

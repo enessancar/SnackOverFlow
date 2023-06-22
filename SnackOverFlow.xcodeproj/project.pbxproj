@@ -27,6 +27,8 @@
 		ECC51D1E2A42CF9500E4871D /* NormalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D1D2A42CF9500E4871D /* NormalButton.swift */; };
 		ECC51D202A42DFA500E4871D /* OnboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D1F2A42DFA500E4871D /* OnboardModel.swift */; };
 		ECC51D232A42F17100E4871D /* ViewHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D222A42F17100E4871D /* ViewHeight.swift */; };
+		ECD20F6B2A434ABC008523BC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD20F6A2A434ABC008523BC /* LoginView.swift */; };
+		ECD20F6E2A441BD2008523BC /* TextFieldModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD20F6D2A441BD2008523BC /* TextFieldModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		ECC51D1D2A42CF9500E4871D /* NormalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalButton.swift; sourceTree = "<group>"; };
 		ECC51D1F2A42DFA500E4871D /* OnboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardModel.swift; sourceTree = "<group>"; };
 		ECC51D222A42F17100E4871D /* ViewHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHeight.swift; sourceTree = "<group>"; };
+		ECD20F6A2A434ABC008523BC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		ECD20F6D2A441BD2008523BC /* TextFieldModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		EC54AE392A40C4780004AD4C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				ECD20F6C2A441BBF008523BC /* ViewModifiers */,
 				ECC51D0D2A41BAB400E4871D /* Localize */,
 				ECC51D042A41051000E4871D /* Extensions */,
 				ECC51D012A40F38300E4871D /* Enums */,
@@ -123,6 +128,7 @@
 		EC54AE3B2A40C4850004AD4C /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				ECD20F692A434706008523BC /* Login */,
 				EC54AE3D2A40C4B70004AD4C /* Authentication */,
 			);
 			path = Feature;
@@ -227,6 +233,22 @@
 			path = Size;
 			sourceTree = "<group>";
 		};
+		ECD20F692A434706008523BC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ECD20F6A2A434ABC008523BC /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ECD20F6C2A441BBF008523BC /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				ECD20F6D2A441BD2008523BC /* TextFieldModifiers.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,6 +327,7 @@
 				ECC51D082A41079A00E4871D /* Icons.swift in Sources */,
 				ECC51D0C2A41AE2800E4871D /* FacebookButton.swift in Sources */,
 				ECC51D1C2A424B7B00E4871D /* OnboardView.swift in Sources */,
+				ECD20F6E2A441BD2008523BC /* TextFieldModifiers.swift in Sources */,
 				ECC51D172A41E4DA00E4871D /* AppleButton.swift in Sources */,
 				ECC51D152A41D56D00E4871D /* GoogleButton.swift in Sources */,
 				ECC51D202A42DFA500E4871D /* OnboardModel.swift in Sources */,
@@ -314,6 +337,7 @@
 				ECC51D192A41FBBA00E4871D /* EmailButton.swift in Sources */,
 				ECC51D062A41053300E4871D /* Color+Ext.swift in Sources */,
 				ECC51D1E2A42CF9500E4871D /* NormalButton.swift in Sources */,
+				ECD20F6B2A434ABC008523BC /* LoginView.swift in Sources */,
 				ECC51D112A41BF0D00E4871D /* LocaleKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

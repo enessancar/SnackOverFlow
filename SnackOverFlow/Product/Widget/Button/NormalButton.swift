@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NormalButton: View {
     var onTap: () -> Void
-    var title: String
+    var title: String 
     
     var body: some View {
         Button {

@@ -12,4 +12,8 @@ enum Icons: String {
     case facebook = "ic_facebook"
     case google = "ic_google"
     case apple = "ic_apple"
+    
+    case mail = "ic_mail"
+    case lock = "ic_lock"
 }
+
