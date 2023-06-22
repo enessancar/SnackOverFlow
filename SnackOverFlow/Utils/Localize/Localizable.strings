@@ -18,7 +18,7 @@
 // Login
 "welcome" = "Welcome Back !";
 "createAccount" = "Create Account";
-"termsAndCondition" = "By clicking \"Create account\", I agree to SnackOverflow’s [TOS](www.com.vb) and [Privacy Policy](www.vb.23).";
+"termsAndCondition" = "By clicking \"Create account\", I agree to SnackOverflow’s [TOS](www.com.vb) and [Privacy Policy](https://github.com/enessancar).";
 
 // General
 "email" = "Write your email";

@@ -26,6 +26,9 @@ struct LoginView: View {
             NormalButton(onTap: {}, title: LocaleKeys.Buttons.createAccount.rawValue)
             
             Text(LocaleKeys.Login.termsAndCondition.rawValue.locale())
+                .foregroundColor(.gandalf)
+                .tint(.cornFlowBlue)
+                .font(.caption)
                 .environment(\.openURL, OpenURLAction(handler: { url in
                     return .discarded
                 })).padding(.top, 16)
