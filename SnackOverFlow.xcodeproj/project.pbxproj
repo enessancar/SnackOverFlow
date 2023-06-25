@@ -14,6 +14,8 @@
 		EC54AE402A40C5970004AD4C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC54AE3F2A40C5970004AD4C /* WelcomeView.swift */; };
 		EC54AE422A40CFFE0004AD4C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC54AE412A40CFFE0004AD4C /* Colors.xcassets */; };
 		EC54AE442A40D0430004AD4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC54AE432A40D0430004AD4C /* Images.xcassets */; };
+		ECBF44252A485D0E0002F3EB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF44242A485D0E0002F3EB /* NetworkManager.swift */; };
+		ECBF44282A48A0540002F3EB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ECBF44272A48A0540002F3EB /* Alamofire */; };
 		ECC51D032A40F48C00E4871D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D022A40F48C00E4871D /* Images.swift */; };
 		ECC51D062A41053300E4871D /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D052A41053300E4871D /* Color+Ext.swift */; };
 		ECC51D082A41079A00E4871D /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D072A41079A00E4871D /* Icons.swift */; };
@@ -29,7 +31,19 @@
 		ECC51D232A42F17100E4871D /* ViewHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D222A42F17100E4871D /* ViewHeight.swift */; };
 		ECD20F6B2A434ABC008523BC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD20F6A2A434ABC008523BC /* LoginView.swift */; };
 		ECD20F6E2A441BD2008523BC /* TextFieldModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD20F6D2A441BD2008523BC /* TextFieldModifiers.swift */; };
+		ECD20F702A457E74008523BC /* OnboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD20F6F2A457E74008523BC /* OnboardViewModel.swift */; };
+		ECD20F732A45864A008523BC /* UserCacheItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD20F722A45864A008523BC /* UserCacheItems.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECBF44312A48C6950002F3EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC54AE202A40C3EE0004AD4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC54AE272A40C3EE0004AD4C;
+			remoteInfo = SnackOverFlow;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EC54AE282A40C3EE0004AD4C /* SnackOverFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnackOverFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +54,8 @@
 		EC54AE3F2A40C5970004AD4C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		EC54AE412A40CFFE0004AD4C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		EC54AE432A40D0430004AD4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECBF44242A485D0E0002F3EB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		ECBF442D2A48C6950002F3EB /* SnackOverFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnackOverFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC51D022A40F48C00E4871D /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		ECC51D052A41053300E4871D /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		ECC51D072A41079A00E4871D /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
@@ -55,10 +71,20 @@
 		ECC51D222A42F17100E4871D /* ViewHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHeight.swift; sourceTree = "<group>"; };
 		ECD20F6A2A434ABC008523BC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		ECD20F6D2A441BD2008523BC /* TextFieldModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifiers.swift; sourceTree = "<group>"; };
+		ECD20F6F2A457E74008523BC /* OnboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewModel.swift; sourceTree = "<group>"; };
+		ECD20F722A45864A008523BC /* UserCacheItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCacheItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EC54AE252A40C3EE0004AD4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECBF44282A48A0540002F3EB /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECBF442A2A48C6950002F3EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				EC54AE282A40C3EE0004AD4C /* SnackOverFlow.app */,
+				ECBF442D2A48C6950002F3EB /* SnackOverFlowTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +114,7 @@
 		EC54AE2A2A40C3EE0004AD4C /* SnackOverFlow */ = {
 			isa = PBXGroup;
 			children = (
+				ECBF44222A485CD80002F3EB /* Core */,
 				EC54AE3C2A40C4A10004AD4C /* Product */,
 				EC54AE3B2A40C4850004AD4C /* Feature */,
 				EC54AE3A2A40C47D0004AD4C /* Resources */,
@@ -109,6 +137,7 @@
 		EC54AE392A40C4780004AD4C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				ECD20F712A458617008523BC /* Cache */,
 				ECD20F6C2A441BBF008523BC /* ViewModifiers */,
 				ECC51D0D2A41BAB400E4871D /* Localize */,
 				ECC51D042A41051000E4871D /* Extensions */,
@@ -169,6 +198,22 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		ECBF44222A485CD80002F3EB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ECBF44232A485CDD0002F3EB /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ECBF44232A485CDD0002F3EB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ECBF44242A485D0E0002F3EB /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		ECC51D012A40F38300E4871D /* Enums */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +266,7 @@
 			children = (
 				ECC51D1B2A424B7B00E4871D /* OnboardView.swift */,
 				ECC51D1F2A42DFA500E4871D /* OnboardModel.swift */,
+				ECD20F6F2A457E74008523BC /* OnboardViewModel.swift */,
 			);
 			path = Onboard;
 			sourceTree = "<group>";
@@ -249,6 +295,14 @@
 			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
+		ECD20F712A458617008523BC /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				ECD20F722A45864A008523BC /* UserCacheItems.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,9 +319,30 @@
 			dependencies = (
 			);
 			name = SnackOverFlow;
+			packageProductDependencies = (
+				ECBF44272A48A0540002F3EB /* Alamofire */,
+			);
 			productName = SnackOverFlow;
 			productReference = EC54AE282A40C3EE0004AD4C /* SnackOverFlow.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ECBF442C2A48C6950002F3EB /* SnackOverFlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECBF44332A48C6950002F3EB /* Build configuration list for PBXNativeTarget "SnackOverFlowTests" */;
+			buildPhases = (
+				ECBF44292A48C6950002F3EB /* Sources */,
+				ECBF442A2A48C6950002F3EB /* Frameworks */,
+				ECBF442B2A48C6950002F3EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECBF44322A48C6950002F3EB /* PBXTargetDependency */,
+			);
+			name = SnackOverFlowTests;
+			productName = SnackOverFlowTests;
+			productReference = ECBF442D2A48C6950002F3EB /* SnackOverFlowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -282,6 +357,10 @@
 					EC54AE272A40C3EE0004AD4C = {
 						CreatedOnToolsVersion = 14.1;
 					};
+					ECBF442C2A48C6950002F3EB = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = EC54AE272A40C3EE0004AD4C;
+					};
 				};
 			};
 			buildConfigurationList = EC54AE232A40C3EE0004AD4C /* Build configuration list for PBXProject "SnackOverFlow" */;
@@ -293,11 +372,15 @@
 				Base,
 			);
 			mainGroup = EC54AE1F2A40C3EE0004AD4C;
+			packageReferences = (
+				ECBF44262A48A0540002F3EB /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = EC54AE292A40C3EE0004AD4C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EC54AE272A40C3EE0004AD4C /* SnackOverFlow */,
+				ECBF442C2A48C6950002F3EB /* SnackOverFlowTests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,6 +395,13 @@
 				EC54AE442A40D0430004AD4C /* Images.xcassets in Resources */,
 				EC54AE332A40C3EE0004AD4C /* Preview Assets.xcassets in Resources */,
 				EC54AE302A40C3EE0004AD4C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECBF442B2A48C6950002F3EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,8 +420,11 @@
 				ECD20F6E2A441BD2008523BC /* TextFieldModifiers.swift in Sources */,
 				ECC51D172A41E4DA00E4871D /* AppleButton.swift in Sources */,
 				ECC51D152A41D56D00E4871D /* GoogleButton.swift in Sources */,
+				ECD20F732A45864A008523BC /* UserCacheItems.swift in Sources */,
 				ECC51D202A42DFA500E4871D /* OnboardModel.swift in Sources */,
 				ECC51D032A40F48C00E4871D /* Images.swift in Sources */,
+				ECD20F702A457E74008523BC /* OnboardViewModel.swift in Sources */,
+				ECBF44252A485D0E0002F3EB /* NetworkManager.swift in Sources */,
 				EC54AE2C2A40C3EE0004AD4C /* SnackOverFlowApp.swift in Sources */,
 				ECC51D232A42F17100E4871D /* ViewHeight.swift in Sources */,
 				ECC51D192A41FBBA00E4871D /* EmailButton.swift in Sources */,
@@ -342,7 +435,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECBF44292A48C6950002F3EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECBF44322A48C6950002F3EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC54AE272A40C3EE0004AD4C /* SnackOverFlow */;
+			targetProxy = ECBF44312A48C6950002F3EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EC54AE342A40C3EE0004AD4C /* Debug */ = {
@@ -517,6 +625,42 @@
 			};
 			name = Release;
 		};
+		ECBF44342A48C6950002F3EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KRQW7JR73;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = enes.SnackOverFlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnackOverFlow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SnackOverFlow";
+			};
+			name = Debug;
+		};
+		ECBF44352A48C6950002F3EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KRQW7JR73;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = enes.SnackOverFlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnackOverFlow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SnackOverFlow";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -538,7 +682,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		ECBF44332A48C6950002F3EB /* Build configuration list for PBXNativeTarget "SnackOverFlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECBF44342A48C6950002F3EB /* Debug */,
+				ECBF44352A48C6950002F3EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECBF44262A48A0540002F3EB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECBF44272A48A0540002F3EB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECBF44262A48A0540002F3EB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC54AE202A40C3EE0004AD4C /* Project object */;
 }

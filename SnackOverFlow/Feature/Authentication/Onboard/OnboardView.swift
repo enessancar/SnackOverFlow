@@ -9,35 +9,46 @@ import SwiftUI
 
 struct OnboardView: View {
     
-    @State private var currentIndex: Int = 0
+    @StateObject var onboardViewModel = OnboardViewModel()
     
     var body: some View {
-        VStack {
-            Spacer()
-            TabView(
-                selection: $currentIndex,
-                content: {
-                    ForEach((0..<OnboardModel.items.count), id: \.self) { value in
-                        SliderCard(model: OnboardModel.items[value])
-                }
-            })
-            .tabViewStyle(.page(indexDisplayMode: .never))
-            Spacer()
-            HStack {
-                ForEach((0...2), id: \.self) { index in
-                    if index == currentIndex {
-                        IndicatorRectangle(width: 44)
-                            .foregroundColor(.coolney)
-                    } else {
-                        IndicatorRectangle(width: 16)
-                            .foregroundColor(.karl)
+        NavigationView {
+            VStack {
+                Spacer()
+                TabView(
+                    selection: $onboardViewModel.currentIndex,
+                    content: {
+                        ForEach((0..<OnboardModel.items.count), id: \.self) { value in
+                            SliderCard(model: OnboardModel.items[value])
+                        }
+                    })
+                .tabViewStyle(.page(indexDisplayMode: .never))
+                Spacer()
+                HStack {
+                    ForEach((0...2), id: \.self) { index in
+                        if (index == onboardViewModel.currentIndex) {
+                            IndicatorRectangle(width: 44)
+                                .foregroundColor(.coolney)
+                        } else {
+                            IndicatorRectangle(width: 16)
+                                .foregroundColor(.karl)
+                        }
                     }
-                }
-            }.frame(height: ViewHeight.indicator)
-            NormalButton(onTap: {
+                }.frame(height: ViewHeight.indicator)
                 
-            }, title: LocaleKeys.Buttons.getStarted.rawValue)
-            .padding(.all, 16)
+                NavigationLink(isActive:
+                                $onboardViewModel.isHomeRedirect) {
+                    WelcomeView()
+                        .ignoresSafeArea()
+                } label: {
+                    NormalButton(onTap: {
+                        onboardViewModel.saveUserLoginAndRedirect()
+                    }, title: LocaleKeys.Buttons.getStarted.rawValue)
+                    .padding(.all, 16)
+                }.onAppear {
+                    onboardViewModel.checkUserFirstTime()
+                }
+            }
         }
         
     }
@@ -54,7 +65,6 @@ private struct SliderCard : View {
                 .font(.system(size: 28, weight: .semibold))
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.peach)
-                
         }
     }
 }

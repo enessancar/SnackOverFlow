@@ -16,6 +16,7 @@ struct LoginView: View {
                 .font(.system(size: 28, weight: .bold))
             
             HTextField(title: LocaleKeys.Login.email.rawValue, image: Icons.mail.rawValue)
+                
             
             HTextSecureField(title: LocaleKeys.Login.password.rawValue, image: Icons.lock.rawValue)
             
