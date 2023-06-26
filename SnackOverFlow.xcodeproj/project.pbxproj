@@ -16,6 +16,9 @@
 		EC54AE442A40D0430004AD4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC54AE432A40D0430004AD4C /* Images.xcassets */; };
 		ECBF44252A485D0E0002F3EB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF44242A485D0E0002F3EB /* NetworkManager.swift */; };
 		ECBF44282A48A0540002F3EB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ECBF44272A48A0540002F3EB /* Alamofire */; };
+		ECBF44392A496ED00002F3EB /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF44382A496ED00002F3EB /* MainTabView.swift */; };
+		ECBF443C2A497F190002F3EB /* MainTabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF443B2A497F190002F3EB /* MainTabModel.swift */; };
+		ECBF443E2A499A790002F3EB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF443D2A499A790002F3EB /* HomeView.swift */; };
 		ECC51D032A40F48C00E4871D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D022A40F48C00E4871D /* Images.swift */; };
 		ECC51D062A41053300E4871D /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D052A41053300E4871D /* Color+Ext.swift */; };
 		ECC51D082A41079A00E4871D /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC51D072A41079A00E4871D /* Icons.swift */; };
@@ -56,6 +59,9 @@
 		EC54AE432A40D0430004AD4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ECBF44242A485D0E0002F3EB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		ECBF442D2A48C6950002F3EB /* SnackOverFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnackOverFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECBF44382A496ED00002F3EB /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		ECBF443B2A497F190002F3EB /* MainTabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabModel.swift; sourceTree = "<group>"; };
+		ECBF443D2A499A790002F3EB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		ECC51D022A40F48C00E4871D /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		ECC51D052A41053300E4871D /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		ECC51D072A41079A00E4871D /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 		EC54AE3B2A40C4850004AD4C /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				ECBF44362A496E990002F3EB /* MainHome */,
 				ECD20F692A434706008523BC /* Login */,
 				EC54AE3D2A40C4B70004AD4C /* Authentication */,
 			);
@@ -212,6 +219,32 @@
 				ECBF44242A485D0E0002F3EB /* NetworkManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		ECBF44362A496E990002F3EB /* MainHome */ = {
+			isa = PBXGroup;
+			children = (
+				ECBF44372A496EA40002F3EB /* Home */,
+			);
+			path = MainHome;
+			sourceTree = "<group>";
+		};
+		ECBF44372A496EA40002F3EB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				ECBF443D2A499A790002F3EB /* HomeView.swift */,
+				ECBF443A2A497F060002F3EB /* Model */,
+				ECBF44382A496ED00002F3EB /* MainTabView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ECBF443A2A497F060002F3EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECBF443B2A497F190002F3EB /* MainTabModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		ECC51D012A40F38300E4871D /* Enums */ = {
@@ -423,6 +456,7 @@
 				ECD20F732A45864A008523BC /* UserCacheItems.swift in Sources */,
 				ECC51D202A42DFA500E4871D /* OnboardModel.swift in Sources */,
 				ECC51D032A40F48C00E4871D /* Images.swift in Sources */,
+				ECBF44392A496ED00002F3EB /* MainTabView.swift in Sources */,
 				ECD20F702A457E74008523BC /* OnboardViewModel.swift in Sources */,
 				ECBF44252A485D0E0002F3EB /* NetworkManager.swift in Sources */,
 				EC54AE2C2A40C3EE0004AD4C /* SnackOverFlowApp.swift in Sources */,
@@ -431,6 +465,8 @@
 				ECC51D062A41053300E4871D /* Color+Ext.swift in Sources */,
 				ECC51D1E2A42CF9500E4871D /* NormalButton.swift in Sources */,
 				ECD20F6B2A434ABC008523BC /* LoginView.swift in Sources */,
+				ECBF443C2A497F190002F3EB /* MainTabModel.swift in Sources */,
+				ECBF443E2A499A790002F3EB /* HomeView.swift in Sources */,
 				ECC51D112A41BF0D00E4871D /* LocaleKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

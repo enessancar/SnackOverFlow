@@ -23,3 +23,10 @@
 // General
 "email" = "Write your email";
 "password" = "Write your password";
+
+// Tab
+"tabHome" = "Home";
+"tabMarket" = "Market";
+"tabCreate" = "Create";
+"tabWishlist" = "Wishlist";
+"tabAccount" = "Account";

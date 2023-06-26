@@ -27,6 +27,14 @@ struct LocaleKeys {
         case password = "password"
         case termsAndCondition = "termsAndCondition"
     }
+    
+    enum TabView: String {
+        case home = "tabHome"
+        case market = "tabMarket"
+        case create = "tabCreate"
+        case wishlist = "tabWishlist"
+        case account = "tabAccount"
+    }
 }
 
 extension String {
